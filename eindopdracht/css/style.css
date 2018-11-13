@@ -1,0 +1,632 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    min-width: 370px;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #f1f1f1;
+    width: 100%;
+    padding-left: 12px;
+    padding-top: 10px;
+    height: 48px;
+    color: #45a80d;
+    text-align: left;
+    min-width: 370px;
+}
+#logo{
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/logo.svg");
+    position: fixed;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#wert{
+    margin-left: 20px;
+}
+
+.burger {
+    width: 48px;
+    height: 48px;
+    background-image: url("../img/burger.png");
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    z-index: 3;
+    cursor: pointer;
+    background-size: cover;
+}
+
+.burger:hover {
+    background-image: url("../img/burger_on.png");
+}
+
+.open {
+    background-image: url("../img/close.png");
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.burger-closed {
+    background-image: url("../img/close.png");
+}
+
+.burger-closed:hover {
+    background-image: url("../img/close_on.png");
+}
+
+
+/* NAV */
+
+nav {
+    height: 100px;
+    position: fixed;
+    top: 38px;
+    width: 100%;
+}
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    line-height: 30px;
+    background-color: #f1f1f1;
+    display: block;
+}
+
+#product-dropdown,
+#product-dropdown,
+#about-us-dropdown,
+#analysis-dropdown {
+    display: hidden;
+}
+
+.li {
+    display: inherit;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+
+}
+
+.li a {
+    display: block;
+    color: #000;
+    /*padding: 8px 16px;*/
+    padding: 9px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.li a:hover{
+    background-color: #555;
+    color: white;
+}
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 22;
+}
+
+/*nested*/
+
+.dropdown-menu-nested {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 280px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* hover */
+
+#analysis-dropdown:hover + .dropdown-menu-nested,
+.dropdown-menu-nested:hover,
+#business-dropdown:hover + .dropdown-menu-nested,
+#spreadsheets-dropdown:hover + .dropdown-menu-nested {
+    display: block;
+}
+
+/**/
+
+ul,
+ol {
+    padding-left: 55px;
+}
+
+.roman {
+    padding-left: 65px;
+}
+
+
+
+.span-section {
+    display: block;
+}
+
+/* 
+change padding-top for the indexes
+*/
+
+#home,
+#product-specs,
+#about-us,
+#contact {
+    padding-top: 300px;
+}
+
+/*end */
+
+#head-spacer {
+    height: 48px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #4CAF50;
+    padding: 20px;
+}
+
+p,
+li {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    padding: 35px;
+}
+
+li {
+    padding: 35px;
+}
+
+/* TABLES */
+
+/* SWOT ANALYSIS */
+
+.swot-analysis,
+.financial-planning,
+.capital-planning,
+.investment-planning,
+.profit-planning {
+    border: 1px solid #ABABAB;
+    border-collapse: collapse;
+    border-spacing: 4px;
+    padding: 8px;
+    font-family: 'Arial';
+}
+
+.swot-analysis td,
+.financial-planning td,
+.capital-planning td,
+.investment-planning td,
+.profit-planning td {
+    border: 1px solid #ABABAB;
+    text-align: left;
+    padding: 8px;
+    background: #F0FFF5;
+}
+
+.swot-analysis .swot-title,
+.financial-planning .financial-planning-left-and-title,
+.capital-planning .capital-planning-title,
+.investment-planning .investment-planning-title,
+.profit-planning .profit-planning-title {
+    background: #D7D7D7;
+}
+
+/* table planning*/
+
+.financial-planning .table-border-right,
+.profit-planning .table-border-right {
+    border-right: 3px solid #807f7f;
+}
+
+.financial-planning .vertical-align {
+    vertical-align: top;
+}
+
+/*table planning*/
+
+.capital-planning,
+.investment-planning,
+.profit-planning {
+    text-align: left;
+    width: 100%;
+}
+
+.capital-planning .table-border-bottom,
+.financial-planning .table-border-bottom,
+.investment-planning .table-border-bottom,
+.profit-planning .table-border-bottom {
+    border-bottom: 3px solid #807f7f;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+/* mail contact */
+
+#mail-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    font-family: "arial";
+}
+
+.sections {
+    /*min-width: 350px;*/
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#left {
+    background-color: #d0cece;
+    padding: 10px 60px 60px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#right {
+    width: 100%;
+    background-color: #c7e8c8;
+    margin-right: 10px;
+    word-wrap: break-word;
+}
+
+
+
+input[type],
+textarea {
+    padding: 8px;
+    border: 4px solid #ccc;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+textarea{
+    width: 100%;
+}
+
+input[type]:focus,
+textarea:focus {
+    border-color: #3b863e;
+}
+
+input[type=submit] {
+    padding: 5px 15px;
+    background: #3b863e;
+    border: 0 none;
+    cursor: pointer;
+}
+
+#resultsId {
+    padding: 4px;
+}
+
+#SendBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#SendBtn:hover {
+    color: black;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+/* address and footer */
+
+address {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+footer {
+    margin-top: 60px;
+    background-color: rgb(72, 72, 72);
+    padding: 30px;
+    color: azure;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+#copy {
+    font-size: 12px;
+    display: inline;
+    margin-left: 8px;
+}
+
+#socials {
+    display: flex;
+    width: 200px;
+    margin-top: 10px;
+}
+
+.icons {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.icons:hover {
+    cursor: pointer;
+}
+
+#rss {
+    background-image: url("../img/rss.png");
+}
+
+#linkedin {
+    background-image: url("../img/linkedin.png");
+}
+
+#twitter {
+    background-image: url("../img/twitter.png");
+}
+
+#rss:hover {
+    background-image: url("../img/rss_on.png");
+}
+
+#linkedin:hover {
+    background-image: url("../img/linkedin_on.png");
+}
+
+#twitter:hover {
+    background-image: url("../img/twitter_on.png");
+}
+
+/* images */
+
+.section-images {
+    width: 100%;
+    height: 500px;
+    /*height: 200px;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #4CAF50;
+    background-position: center;
+}
+
+#img-1 {
+    background-image: url("../img/home.png");
+}
+
+.img-h1 {
+    width: 100%;
+    max-height: 150px;
+}
+
+/*hide divs*/
+
+p,
+li {
+    text-align: justify;
+}
+
+#section-spreadsheets {
+    display: none;
+}
+/* 404 redirect*/
+#not-found{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    text-align: center;
+    color: #45a80d;
+    margin-top: 80px;
+}
+#click{
+    display: block;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+/* Media queries */
+
+@media (min-width: 720px) {
+    header {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        background-color: #868585;
+    }
+    #container {
+        width: 95%;
+        background-color: white;
+    }
+    #wert{
+    margin-left: 40px;
+}
+    header {
+        font-size: 30px;
+        width: 95%;
+        text-align: left;
+        padding-top: 0px;
+    }
+    .burger {
+        display: none;
+    }
+    nav {
+        display: block;
+        width: 95%;
+        top: 40px;
+    }
+    .ul {
+        display: flex;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+    .li {
+        margin: 2px;
+    }
+    .li a {
+        padding: 20px;
+    }
+    .menu:hover .dropdown-menu {
+        display: block;
+    }
+    section,
+    .span-section,
+    #home,
+    #about-us,
+    #product-specs,
+    #contact {
+        padding-top: 130px;
+    }
+    #head-spacer {
+        height: 134px;
+    }
+    p {
+        text-align: left;
+        padding: 20px;
+        line-height: 32px;
+    }
+    li {
+        padding: 6px;
+        text-align: left;
+    }
+    ul,
+    ol {
+        padding-left: 35px;
+        line-height: 32px;
+        padding-bottom: 25px;
+    }
+    #section-spreadsheets {
+        display: block;
+        margin: 20px;
+    }
+    /* mail */
+    .sections {
+        /*min-width: 350px;*/
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #mail-container {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+    }
+    #left {
+
+        padding: 20px 60px 60px;
+        margin-top: 20px;
+        width: 50%;
+    }
+
+    #right {
+        width: 50%;
+        margin-right: 20px;
+        word-wrap: break-word;
+    }
+    #resultsId {
+        padding: 20px;
+    }
+
+}
+
+@media (min-width: 780px) {
+    header {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 493px) {
+   
+    .burger {
+        top: 48px;
+    }
+}
+@media (min-width: 1500px) {
+    .img-h1{
+        /* fix imgs resize */
+        object-fit: cover;
+    }
+
+}
+/* pads horizontal */
+@media screen and (device-aspect-ratio: 71/40){
+    nav {
+        display: none;
+    }
+    .burger{
+        display:none;
+    }
+    section,
+    .span-section,
+    #home,
+    #about-us,
+    #product-specs,
+    #contact {
+        padding-top: 130px;
+    }
+    #wert{
+        padding-left: 30px;
+    }
+}
+@media screen and (device-aspect-ratio: 667/375){
+    nav {
+        display: none;
+    }
+    .burger{
+        display:none;
+    }
+    section,
+    .span-section,
+    #home,
+    #about-us,
+    #product-specs,
+    #contact {
+        padding-top: 130px;
+    }
+    #wert{
+        padding-left: 30px;
+    }
+}
