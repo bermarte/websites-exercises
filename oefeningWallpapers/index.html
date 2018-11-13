@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!--
+
+________________
+
+*** OEFENING ***
+
+TE VINDEN OP
+http://flashingmoose.com/school/school2014/wallpapers/
+________________
+
+Maak css en javascript bij deze pagina zodat de pagina eruit gaaat zien als de bijgeleverde screenshot.
+Bekijk de werking in de bijgeleverde video:
+http://flashingmoose.com/school/school2014/wallpapers/wallpapersWerking.mp4
+
+Probeer zo weinig mogelijk in de html te wijzigen. 
+Bewaar de js voor 't laatst.
+
+Minimale Voorkennis
+boxmodel, normal flow, float, positioning, 
+
+
+TIPS
+
+Breedte vd wrapper is 960px
+
+h1 font toevoegen:
+http://fontfabric.com/metropolis-free-font/
+http://www.fontsquirrel.com/ 	>	webfont generator
+
+driehoeken:
+http://apps.eky.hk/css-triangle-generator/
+
+STEL VEEL VRAGEN!
+
+Probeer zoveel mogelijk hiervan af te maken tegen volgende les.
+Volgende week gaan we de site gezamelijk maken mbv. nieuwe software, technieken zoals:
+Sublime Text, Prepros, Less, Emmet en meer.  
+
+
+-->
+
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Deco</title>
+	<link href='http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<div id="wrapper">
+	
+		<header>
+			
+			<h1>
+				ART DECO
+			</h1>
+			<h2>
+				wallpapers
+			</h2>
+
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+
+		</header>
+		
+		<div id="mainContent">
+
+			<section id="intro">
+				<h2>intro</h2>
+
+				<article>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+					<p>Ipsum repellendus praesentium maxime ad qui non quaerat, distinctio odio sit aliquam impedit esse in quos reprehenderit ipsa, dolorum asperiores magnam sequi earum laboriosam error. Odit id cupiditate, consectetur placeat.</p>
+					<p>Dignissimos, assumenda unde rerum porro iure eveniet ab inventore nulla vero nemo, enim ducimus labore libero veritatis laborum tenetur temporibus quidem alias. Quam consectetur ipsa fuga eum hic quidem. Quod!</p>
+					<p>Asperiores animi nisi maiores deleniti placeat magnam architecto et officia eius unde tempore provident vel sed ullam, vitae, consequuntur. At quisquam soluta ipsam, facere vero molestias earum sunt cumque et!</p>
+					<p>Doloremque, harum saepe aperiam qui sit quidem, voluptas facilis laboriosam iste aspernatur ducimus iusto vero. Sint cupiditate modi blanditiis, excepturi asperiores. A velit voluptates non quam quaerat illo sed ex?</p>
+					<p>Ratione cum iste temporibus accusantium commodi minima fugiat distinctio officia, magni doloremque iure impedit consectetur repudiandae non similique repellendus, eum amet eos. Blanditiis nihil iusto, eligendi laboriosam illum ea alias.</p>
+				</article>
+
+			</section>
+
+
+			<section id="stock">
+				<h2>in stock</h2>
+				<div class="stockItem stockItem1">
+					<img src="img/b1.jpg" alt="b1">
+					<p>item1</p>
+				</div>
+				<div class="stockItem stockItem2">
+					<img src="img/b2.jpg" alt="b2">
+					<p>item2</p>
+				</div>
+				<div class="stockItem stockItem3">
+					<img src="img/b3.jpg" alt="b3">
+					<p>item3</p>
+				</div>
+				<div class="stockItem stockItem4">
+					<img src="img/b4.jpg" alt="b4">
+					<p>item4</p>
+				</div>
+				<div class="stockItem stockItem5">
+					<img src="img/b5.jpg" alt="b5">
+					<p>item5</p>
+				</div>
+				<div class="stockItem stockItem6">
+					<img src="img/b6.jpg" alt="b6">
+					<p>item6</p>
+				</div>
+				<div class="stockItem stockItem7">
+					<img src="img/b7.jpg" alt="b7">
+					<p>item7</p>
+				</div>
+				<div class="stockItem stockItem8">
+					<img src="img/b8.jpg" alt="b8">
+					<p>item8</p>
+				</div>
+				<div class="stockItem stockItem9">
+					<img src="img/b9.jpg" alt="b9">
+					<p>item9</p>
+				</div>
+			</section>
+
+		</div>
+
+		<footer>
+			<h6>&copy; 20?? somebody, all rights reserved</h6>
+		</footer>
+		
+	</div>
+
+
+
+	<div id="newsletter">
+			<a href="#" id="newsbutton">newsletter</a>
+			<h2>Please</h2>
+			<p>Sign up to our free newsletter</p>
+			<form>
+				<label>name</label>
+				<input type="text" action="newsletter.php" method="post">
+				<label>email</label>
+				<input type="text" name="user">
+				<input type="submit" value="Submit">
+			</form>
+
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+
+	
+</body>
+</html>
