@@ -1,0 +1,20 @@
+
+<svg width="648px" height="652px" viewBox="0 0 648 652" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="website_hover" transform="translate(54.000000, 54.000000)">
+            <ellipse id="hover" stroke="#FF8729" stroke-width="109" cx="270" cy="272" rx="269.4995" ry="271.339087"></ellipse>
+            <circle id="Oval" fill="#136EF1" fill-rule="nonzero" cx="270" cy="272" r="256"></circle>
+            <path d="M526,272 C526,265.835 525.769,259.724 525.34,253.668 L388.672,117 L334.18,164.508 L115,299.852 L151.328,335.852 L151.328,427 L251.668,527.34 C257.724,527.768 263.835,528 270,528 C411.385,528 526,413.385 526,272 Z" id="Shape" fill="#0E53B5" fill-rule="nonzero"></path>
+            <path d="M425,231.736 L425,299.851 L278.718,299.851 C278.718,299.851 276.538,299.851 270,299.851 L115,299.851 L115,231.736 L270,117 L425,231.736 Z" id="Shape" fill="#FF3636" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#BABAC0" fill-rule="nonzero" points="334.18 117 334.18 181.785 388.672 227.195 388.672 117"></polygon>
+            <path d="M425,231.736 L425,299.851 L278.718,299.851 C278.718,299.851 276.538,299.851 270,299.851 L270,117 L425,231.736 Z" id="Shape" fill="#F40000" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#E7E7E7" fill-rule="nonzero" points="270 161.441 151.328 249.9 151.328 427 388.672 427 388.672 249.9"></polygon>
+            <polygon id="Shape" fill="#D3D3D8" fill-rule="nonzero" points="388.672 249.9 388.672 427 270 427 270 161.441"></polygon>
+            <path d="M270,281.688 C244.934,281.688 224.59,302.032 224.59,327.098 L224.59,427 L315.41,427 L315.41,327.098 C315.41,302.031 295.066,281.688 270,281.688 Z" id="Shape" fill="#5A5A5A" fill-rule="nonzero"></path>
+            <path d="M315.41,327.098 L315.41,427 L270,427 L270,281.688 C295.066,281.688 315.41,302.031 315.41,327.098 Z" id="Shape" fill="#444444" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+
+<svg width="648px" height="652px" viewBox="0 0 648 652" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mail_hover" transform="translate(68.000000, 70.000000)">
+            <ellipse id="hover" stroke="#FF8729" stroke-width="109" cx="256" cy="256" rx="269.4995" ry="271.339087"></ellipse>
+            <circle id="Oval" fill="#00ABE9" fill-rule="nonzero" cx="256" cy="256" r="256"></circle>
+            <path d="M472.576,392.529 L365.124,285.077 L285.298,365.573 L392.389,472.664 C424.718,452.27 452.161,424.844 472.576,392.529 Z" id="Shape" fill="#0080AF" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#444444" fill-rule="nonzero" points="382.498 354.595 394 394 354.367 382.726 350.25 364.201 367.746 346.706"></polygon>
+            <polygon id="Shape" fill="#5A5A5A" fill-rule="nonzero" points="367.746 346.706 382.498 354.595 394 394 357.111 357.34"></polygon>
+            <path d="M365.459,285.412 C367.341,293.954 379.937,344.156 382.498,354.595 L354.367,382.726 C332.63,377.395 291.36,366.987 285.298,365.573 L286.442,350.021 L318.117,318.346 L353.909,282.325 L365.459,285.412 Z" id="Shape" fill="#FFC473" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#FF9F00" fill-rule="nonzero" points="358.14 278.093 365.459 285.412 285.298 365.573 163.741 244.017 163.627 221.261 223.319 161.568 243.788 163.97"></polygon>
+            <path d="M353.909,282.324 L365.459,285.412 C367.341,293.954 379.937,344.156 382.498,354.595 L368.432,368.661 L318.117,318.346 L353.909,282.324 Z" id="Shape" fill="#FFD396" fill-rule="nonzero"></path>
+            <polygon id="Shape" fill="#FDBF00" fill-rule="nonzero" points="358.14 278.093 365.459 285.412 325.321 325.55 192.329 192.558 223.319 161.568 243.788 163.97"></polygon>
+            <polygon id="Shape" fill="#444444" fill-rule="nonzero" points="158.023 158.252 118 198.276 163.741 244.017 243.788 163.97 198.047 118"></polygon>
+            <polygon id="Shape" fill="#5A5A5A" fill-rule="nonzero" points="243.788 163.97 203.764 203.993 158.023 158.252 198.047 118"></polygon>
+        </g>
+    </g>
+</svg>
