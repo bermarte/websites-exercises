@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>opdracht</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   <div id="menu">
+
+            <div id="btn">
+                <div class="stripes" id="stripe1"></div>
+                <div class="stripes" id="stripe2"></div>
+                <div class="stripes" id="stripe3"></div>
+            </div>
+            <nav id="submenu" class="remove">
+                <ul>
+                    <li><a href="#">MEMPHIS</a></li>
+                    <li><a href="#">BRUTALISM</a></li>
+                    <li><a href="#">GLITCH</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    <div id="container">
+        
+
+
+        <head>
+            <h1 id="h1-brutalist">BRUTALIST</h1>
+            <div id="under_h1">
+                architecture
+            </div>
+        </head>
+
+        <main>
+
+            <div id="intro_section">
+                <h1 id="intro-h1">IN-<br>TRO</h1>
+                <div id="intro_container">
+                    <div id="intro_section_1">
+                        <h2 class="h2-text"> origin</h2>
+                        <p class="brutalist_p">Brutalist architecture flourished from the 1950s to the mid-1970s, descending from the modernist architectural movement of the early 20th century.</p>
+
+                        <p class="brutalist_p">The term originates from the French word for "raw", as Le Corbusier described his choice of material <b>béton</b> brut meaning raw concrete in French. Architects Alison and Peter Smithson are believed to have coined the term "Brutalism" in the 1950s.</p>
+                    </div>
+
+                    <div id="intro_section_2">
+                        <h2 class="h2-text"> today</h2>
+                        <p class="brutalist_p">Although the Brutalist movement was largely dead by the mid-1980s, having largely given way to Structural Expressionism and Deconstructivism, it has experienced a <b>resurgence</b> of interest since 2015 with the publication of a variety of guides and books.</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <h1 id="characteristics-h1">
+                    CHAR-<br>ACTER-<br>ISTICS
+                </h1>
+
+            <div id="characteristics_section">
+
+
+                <div id="repeat_section">
+                    <div class="left">
+                        <h2 class="h2-text2"> repeat </h2>
+                    </div>
+                    <div class="right">
+                        <img class="repeat_img" src="img/kenmerken/k6.jpg" />
+                        <div class="read">REPEATED MODULAR ELEMENTS</div>
+                    </div>
+                </div>
+
+                <div id="concrete_section">
+                    <div class="left">
+                        <h2 class="h2-text2"> concrete </h2>
+                    </div>
+                    <div class="right">
+                        <img class="repeat_img" src="img/kenmerken/k3.jpg" />
+                        <div class="read">CONCRETE IS USED FOR ITS RAW AND UNPRETENTIOUS HONESTY</div>
+                    </div>
+                </div>
+
+                <div id="revealing_section">
+                    <div class="left">
+                        <h2 class="h2-text2"> texture </h2>
+                    </div>
+                    <div class="right">
+                        <img class="repeat_img" src="img/kenmerken/k4.jpg" />
+                        <div class="read">REVEALING THE TEXTURE OF THE WOODEN PLANKS USED FOR CASTING FORMS</div>
+                    </div>
+                </div>
+
+                <div id="material_section">
+                    <div class="left">
+                        <h2 class="h2-text2"> materials </h2>
+                    </div>
+                    <div class="right">
+                        <img class="repeat_img" src="img/kenmerken/k2.jpg" />
+                        <div class="read">MATERIALS ALSO INCLUDE BRICK, GLASS, STEEL AND GABIONS</div>
+                    </div>
+                </div>
+
+                <div id="exposure_section">
+                    <div class="left">
+                        <h2 class="h2-text2"> exposure </h2>
+                    </div>
+                    <div class="right">
+                        <img class="repeat_img" src="img/kenmerken/k2.jpg" />
+                        <div class="read">THE EXPOSURE OF THE BUILDING'S FUNCTIONS</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </main>
+        <footer>POWERED BY xy</footer>
+    </div>
+    <script>
+        var myMenu = document.querySelector("#btn");
+        var nav = document.querySelector("menu");
+        myMenu.addEventListener("click", toggleMenu);
+
+        function toggleMenu(evt) {
+            var line1 = document.querySelector("#stripe1");
+            var line2 = document.querySelector("#stripe2");
+            var line3 = document.querySelector("#stripe3");
+
+            line1.classList.toggle('stripe1');
+            line2.classList.toggle('hide');
+            line3.classList.toggle('stripe3');
+
+            var nav = document.querySelector("#submenu");
+            nav.classList.toggle('remove');
+
+        }
+    </script>
+
+</body>
+
+</html>
