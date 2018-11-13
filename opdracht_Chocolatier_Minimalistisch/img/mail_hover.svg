@@ -1,0 +1,13 @@
+
+<svg width="114px" height="84px" viewBox="0 0 114 84" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Board" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Social-Line-Icons" transform="translate(-562.000000, -358.000000)" stroke="#663332" stroke-width="4">
+            <g id="Icons" transform="translate(126.000000, 160.000000)">
+                <path d="M445.999535,200 C441.581514,200 438,203.579786 438,208.000051 L438,271.999949 C438,276.418255 441.5818,280 445.999535,280 L540.000465,280 C544.418486,280 548,276.421053 548,272.003003 L548,242.716797 M548,219.824707 L548,207.991424 C548,203.577882 544.4182,200 540.000465,200 L445.999535,200 M460.30127,226.864746 L495.30957,247.938965 L547.507324,220.135254" id="message"></path>
+            </g>
+        </g>
+    </g>
+</svg>

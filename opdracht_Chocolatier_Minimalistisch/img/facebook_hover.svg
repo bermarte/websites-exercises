@@ -1,0 +1,12 @@
+<svg width="103px" height="104px" viewBox="0 0 103 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Board" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Social-Line-Icons" transform="translate(-124.000000, -158.000000)" stroke="#663332" stroke-width="4">
+            <g id="Icons" transform="translate(126.000000, 160.000000)">
+                <path d="M29.9794458,99.6229406 L5.97930846,99.5346433 C2.66571578,99.5218 -0.0120416523,96.6561514 4.07275552e-05,93.1338919 L0.300589927,6.35584329 C0.311162009,2.83358383 3.00704302,-0.012799951 6.32214599,4.32922904e-05 L92.9920773,0.319518968 C96.3071803,0.330756806 98.9834275,3.19640545 98.9728554,6.72027032 L98.6723062,93.4967136 C98.6602238,97.0205784 95.9643428,99.8653568 92.6507501,99.854119 L51.9814595,99.7032109 M74.7446632,30.1714973 C74.7446632,30.1714973 52.115876,18.0410541 52.0494229,38.5934541 C51.9829698,59.1458541 51.8500636,99.5410649 51.8500636,99.5410649 M74.6631071,54.2670271 L35.9979812,54.1257514" id="Facebook"></path>
+            </g>
+        </g>
+    </g>
+</svg>
