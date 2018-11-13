@@ -1,0 +1,535 @@
+*{
+    margin : 0 auto;
+    padding: 0;
+}
+body{
+    background-color: rgb(252,239,239);
+}
+#container{
+    background-color: white;
+    width: 920px;
+}
+@font-face {
+    font-family: 'bodom';
+    src: url('../fonts/bodom___-webfont.woff2') format('woff2'),
+         url('../fonts/bodom___-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pixel';
+    src: url('../fonts/pixel_dingbats-7-webfont.woff2') format('woff2'),
+         url('../fonts/pixel_dingbats-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: "Myriad-font";  
+    src: url(../fonts/MyriadPro-Regular.otf) format("truetype");
+}
+/* navigation */
+nav{
+    position: fixed;
+    z-index: 14;
+}
+
+#logo{
+    font-family: bodom, fantasy;
+    padding: 20px;
+    font-size: 40px;
+    background-color: rgb(198,198,198);
+    z-index: 1;
+    position: absolute;
+    left: -120px;
+    width: 277px;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    position: absolute;
+    left: 100px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(178,0,218);
+    font-family: 'Myriad-font', sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    background-color: rgb(239,238,253);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    
+}
+
+#memphis
+{
+    position:absolute;
+    left: 253px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+#glitch
+{
+    position:absolute;
+    left: 674px;
+    padding-right: 50px;
+    
+}
+#brutalism
+{
+    position:absolute;
+    left: 400px;
+    padding-right: 50px;
+    
+}
+#panton
+{
+    position:absolute;
+    left: 540px;
+    padding-right: 50px;
+    
+}
+/* nav random glitch ani */
+
+@keyframes glitch-hover {
+    0% {
+        transform: translate(0)
+    }
+    3% {transform: scale(1.5)
+        rotate(0deg) transform: translateX(-12px)}
+    4% {
+        transform: translate(-5px, 5px) rotate(12deg)
+    }
+    6% {
+        transform: translate(-5px, -5px)rotate(-12deg)
+    }
+    7% {
+        transform: translateX(-8px)
+    }
+    9% {
+        transform: translateX(0px)
+    }
+    10% {
+        transform: translateX(-60px)
+    }
+    11% {
+        transform: translateX(0px)
+    }
+    12% {
+        transform: scale(1.8)
+    }
+    13% {
+        transform: scale(1)
+    }
+
+}
+#logo p,
+#memphis p,
+#brutalism p,
+#panton p,
+#glitch p{
+    animation-name: glitch-hover;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused; 
+    transform-origin: 50% 0%;
+}
+#logo:hover p,
+#memphis:hover p,
+#brutalism:hover p,
+#panton:hover p,
+#glitch:hover p
+{
+    animation-play-state: running;
+}
+
+/* yellow elements next to nav */
+#element-left{
+    width: 315px;
+    height: 12px;
+    position: absolute;
+    right: -331px;
+    top: 88px;
+    transform: skewX(12deg);
+    background-color: rgb(232,240,79);
+}
+#element-right{
+    width: 40px;
+    height: 63px;
+    position: absolute;
+    right: -939px;
+    top: 0;
+    background-color: rgb(212,218,73);
+}
+/** section 1 **/
+#first-image{
+    width: 920px;
+    height: 826px;
+    background-image: url('../img/headerImg.jpg');
+    background-size: cover;
+    position: relative;
+}
+#first-image::after{
+    content: "© Aïsha C. 2020, all rights reserved";
+    font-family: 'helvetica', 'Arial', sans-serif;
+    position:absolute;
+    bottom: 8px;
+    right: 14px;
+}
+/* yellow button centered */
+#div-btn-down{
+    width: 50px;
+    height: 100px;
+    position: relative;
+    top: 753px;
+    background-color: rgb(211,217,73);
+    text-align: center;
+    font-family: 'Geneva', sans-serif; 
+    font-size: 35px;
+    font-weight: normal;
+    color: white;
+    animation-name: move-btn;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+#div-btn-down-v1{
+    position: relative;
+    top: 11px;
+}
+#div-btn-down-v2{
+    position: relative;
+    top: -15px;
+}
+#div-btn-down-v3{
+    position: relative;
+    top: -40px;
+
+}
+/* yellow btn ani */
+@keyframes move-btn {
+    0%   {
+        transform: translateY(0px);
+    }
+    
+    6%  {
+        transform: translateY(12px);
+    }
+    12%  {
+        transform: translateY(0px);
+    }
+    18%  {
+        transform: translateY(12px);
+    }
+    21%  {
+        transform: translateY(0px);
+    }
+    100% {
+    }
+}
+
+/* other section */
+#meaning{
+  padding: 80px 120px;
+}
+h1{
+    text-align: center;
+    font-family: bodom, fantasy;
+    font-size: 60px;
+    color: black;
+    padding-bottom: 60px;
+}
+/* paragraphs */
+.p{
+    font-family: 'Myriad-font', sans-serif; 
+    
+    margin: 20px;
+    position: relative;
+    margin-top: 0px;
+    line-height: 29px;
+}
+#p,#p2{
+    /* overwrite p */
+    margin: 35px;
+    line-height: 35px;
+}
+#p-three-1,
+#p-three-2,
+#p-three-3{
+    font-size: 18px;
+}
+/** section 2 **/
+h2{
+   font-family: 'Myriad-font', sans-serif; 
+    font-size: 22px; 
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 4px;
+    
+    position: relative;
+    z-index: 1;
+}
+#data-manipulation,
+#hardware-failure,
+#distortion{
+    letter-spacing: 2px;
+}
+/*paragraph - glitch before*/
+#data-manipulation:before{
+   content: ".";
+    font-family: pixel;
+    font-size: 80px;
+    color: yellow;
+    position: absolute;
+    top: -33px;
+    left: 2px;
+    z-index: -1;   
+}
+#hardware-failure:before{
+   content: "€";
+    font-family: pixel;
+    font-size: 80px;
+    color: yellow;
+    position: absolute;
+    top: -33px;
+    left: 2px;
+    z-index: -1;
+}
+#distortion:before{
+   content: "%";
+    font-family: pixel;
+    font-size: 80px;
+    color: yellow;
+    position: absolute;
+    top: -33px;
+    left: 2px;
+    z-index: -1;
+}
+/* text */
+#three-texts{
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+.three-texts{
+    width: 33.33%;
+}
+.three-texts p{
+    font-size: 20px;
+    z-index: 12;
+}
+/* gallery sections */
+#gallery{
+    width: 955;
+}
+/* gallery row */
+#gallery-1{
+    position: relative;
+    left: -44px;
+    display: flex;
+    height: 357px;
+    width: 965px;
+}
+#img-1{
+    width: 597px;
+    height: 357px;
+    background-image: url('../img/magno.jpg');
+    background-size: cover;   
+}
+#img-2{
+    width: 369px;
+    height: 357px;
+    background-image: url(../img/gifs/josip.gif);
+    background-size: cover;
+}
+/* gallery row */
+#gallery-2{
+    position: relative;
+    left: 0px;
+    height: 357px;
+    width: 960px;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+}
+#img-3{
+    width: 369px;
+    height: 357px;
+    background-image: url('../img/gifs/Januz Miralles.gif');
+    background-size: cover;
+    margin: 0;
+    background-position:center center;
+}
+#img-4{
+    width: 548px;
+    height: 357px;
+    background-image: url('../img/Anton Lisin.jpg');
+    background-size: cover;
+    margin: 0;
+    background-position:center center;
+}
+/* gallery row */
+#gallery-3{
+    position: relative;
+    float: left;
+    left: -20px;
+    display: flex;
+    width: 942px;
+    height: 357px;
+}
+#img-5{
+    width: 185px;
+    height: 357px;
+    background-image: url('../img/adam ferris.jpg');
+    background-size: cover;
+    background-position:center center;
+}
+#img-6{
+    width: 395px;
+    height: 357px;
+    background-image: url('../img/gifs/unknown.gif');
+    background-size: cover;
+    background-position:center center;
+}
+#img-7{
+    width: 398px;
+    height: 357px;
+    background-image: url('../img/emptyhouse.png');
+    background-size: cover;
+    background-position:center center;
+}
+/* portfolio hovers */
+.portfolio-container{
+    width: 250px;
+    height: 99px;
+    position: relative;
+    bottom: -258px;
+    overflow: hidden;
+    /* background-color: red;*/
+    font-family: 'Myriad-font', sans-serif;
+    text-align: center;
+    animation-name: portfolio-glitch-hover;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    animation-fill-mode: forwards;
+    transform-origin: 50% 0%;
+    opacity: 0;
+}
+.portfolio{
+    width: 250px;
+    height: 99px;
+    transform: skewX(12deg);
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: -61px;
+}
+.portfolio-h3{
+    position: relative;
+    font-size: 22px;
+    left: -36px;
+    z-index: 2;
+    bottom: -28px;
+    font-weight: bolder;
+}
+.portfolio-p{
+    position: relative;
+    left: -36px;
+    z-index: 2;
+    bottom: -31px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(140,62,175);
+}
+.portfolio-p:before{
+   content: "'";
+    font-family: pixel;
+    font-size: 9px;
+    position: relative;
+    left: -6px;
+}
+.portfolio-p:after{
+   content: "'";
+    font-family: pixel;
+    font-size: 9px;
+    position: relative;
+    left: 6px;
+}
+.heitor-magno{
+    left: -173px;
+}
+.josip{
+    left: -11px;
+    width: 350px;
+}
+.portfolio-josip{
+    width: 350px;
+}
+.januz{
+    left: -60px;
+}
+.lisin{
+    left: -150px;
+}
+.ferris{
+    left: 0px;
+    width: 185px;
+}
+.ferris-h3-adjust{
+   left: 0px; 
+}
+.ferris-p-adjust{
+   left: 0px;  
+}
+.portfolio-ferris{
+    transform: skewX(0deg);
+    /*background-color: red;*/
+}
+.house{
+    left: -64px;
+}
+.maker{
+    left: -64px;
+}
+/* portfolio: hover */
+@keyframes portfolio-glitch-hover {
+    0% {opacity: 0;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    30% {opacity: 1;}
+    100% {opacity: 1;}
+}
+.imgs:hover  > .portfolio-container{
+   animation-play-state: running;
+}
+/* CSS mouse out sort of */
+.imgs:not(:hover)  > .portfolio-container{
+   animation: none;
+}
+/***/
+main{
+    margin-bottom: 20px;
+}
+footer{
+    font-family: 'Myriad-font', sans-serif;
+    height: 234px;
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+    text-shadow: -13px -13px 0 rgb(236,242,130), 13px 13px 0 rgb(183,68,210);
+    font-size: 19px;
+    background-color: white;
+    margin-bottom: 57px;
+}
+#footer-content{
+    position: relative;
+    bottom: -180px;
+}
