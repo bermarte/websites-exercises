@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>GUNDAM Bernardo</title>
+    <link rel="stylesheet" href="css/gundam.css">
+    <script src="js/logic.js"></script>
+    <script src="js/iframe.js"></script>
+</head>
+
+<body onLoad="myMain();">
+    <div id="container_body">
+        <div id="base" class="resize position norepeat absolute"></div>
+        <div id="skeleton" class="resize position norepeat absolute"></div>
+        <!-- shelter -->
+        <div id="mini_bones" class="resize position norepeat absolute"></div>
+        <!-- torso -->
+        <div id="pet-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="pet-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <div id="co-shelter" class="resize position norepeat absolute ani"></div>
+        <!-- leg -->
+        <div id="g-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="g-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <!-- pelvis -->
+        <div id="pel-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="pel-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <!-- leg part 2 -->
+        <div id="s-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="s-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <div id="po-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="po-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <div id="sf-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="sf-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <!-- foot -->
+        <div id="pd-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="pd-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <!-- -->
+        <div id="gu-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="gu-shelter_DX" class="resize position norepeat absolute ani"></div>
+
+        <div id="p-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="p-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <!-- arm -->
+        <div id="br-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="br-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <div id="av-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="av-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <!-- hand -->
+        <div id="hand-top" class="resize position norepeat absolute ani">
+        </div>
+        <div id="hand-shelter_SX" class="resize position norepeat absolute ani"></div>
+        <div id="hand-shelter_DX" class="resize position norepeat absolute ani"></div>
+        <!-- nek shoulder -->
+        <div id="coll-shelter" class="resize position norepeat absolute ani"></div>
+        <div id="sh-shelter" class="resize position norepeat absolute ani ani"></div>
+        <!-- controllers -->
+        <div id="controller-sh" class="absolute hide" onmouseover="sh()" onmouseout="shBack()" onClick="showShoulder()">
+        </div>
+        <div id="controller-br_Sx" class="absolute hide" onmouseover="brSx()" onmouseout="brSxBack()" onClick="showArmUp()">
+        </div>
+        <div id="controller-br_Dx" class="absolute hide" onmouseover="brDx()" onmouseout="brDxBack()" onClick="showArmUp()">
+        </div>
+        <div id="controller-av_Sx" class="absolute hide" onmouseover="avSx()" onmouseout="avSxBack()" onClick="showArm()">
+        </div>
+        <div id="controller-av_Dx" class="absolute hide" onmouseover="avDx()" onmouseout="avDxBack()" onClick="showArm()">
+        </div>
+        <div id="controller-hand_Sx" class="absolute hide" onmouseover="handSx()" onmouseout="handSxBack()" onClick="showHand()">
+        </div>
+        <div id="controller-hand_Dx" class="absolute hide" onmouseover="handDx()" onmouseout="handDxBack()" onClick="showHand()">
+        </div>
+        <!-- head -->
+        <div id="controller-head" class="absolute hide" onclick="showHead()">
+        </div>
+        <div id="controller-coll" class="absolute hide" onmouseover="coll()" onmouseout="collBack()" onClick="showCollar()">
+        </div>
+        <div id="controller-pet_Sx" class="absolute hide" onmouseover="petSx()" onmouseout="petSxBack()" onClick="showBelly()">
+        </div>
+        <div id="controller-pet_Dx" class="absolute hide" onmouseover="petDx()" onmouseout="petDxBack()" onClick="showChest()">
+        </div>
+        <!--? col> co-->
+        <div id="controller-co" class="absolute hide" onmouseover="co()" onmouseout="coBack()" onClick="showBellySide()">
+        </div>
+        <div id="controller-pel_Sx" class="absolute hide" onmouseover="pelSx()" onmouseout="pelSxBack()" onClick="showPelvis()">
+        </div>
+        <div id="controller-pel_Dx" class="absolute hide" onmouseover="pelDx()" onmouseout="pelDxBack()" onClick="showPelvis()">
+        </div>
+        <div id="controller-g_Sx" class="absolute hide" onmouseover="gSx()" onmouseout="gSxBack()" onClick="showUpperLeg()">
+        </div>
+        <div id="controller-g_Dx" class="absolute hide" onmouseover="gDx()" onmouseout="gDxBack()" onClick="showUpperLeg()">
+        </div>
+        <div id="controller-sf_Sx" class="absolute hide" onmouseover="sfSx()" onmouseout="sfSxBack()" onclick="showKnie()">
+        </div>
+        <div id="controller-sf_Dx" class="absolute hide" onmouseover="sfDx()" onmouseout="sfDxBack()" onclick="showKnie()">
+        </div>
+        <div id="controller-po_Sx" class="absolute hide" onmouseover="poSx()" onmouseout="poSxBack()" onclick="showKnieBack()">
+        </div>
+        <div id="controller-po_Dx" class="absolute hide" onmouseover="poDx()" onmouseout="poDxBack()" onclick="showKnieBack()">
+        </div>
+        <div id="controller-Sx" class="absolute hide" onmouseover="Sx()" onmouseout="SxBack()" onclick="showKnieLow()">
+        </div>
+        <div id="controller-Dx" class="absolute hide" onmouseover="Dx()" onmouseout="DxBack()" onclick="showKnieLow()">
+        </div>
+        <div id="controller-ps_Sx" class="absolute hide" onmouseover="psSx()" onmouseout="psSxBack()" onclick="showFootBetween()">
+        </div>
+        <div id="controller-ps_Dx" class="absolute hide" onmouseover="psDx()" onmouseout="psDxBack()" onclick="showFootBetween()">
+        </div>
+        <div id="controller-gu_Sx" class="absolute hide" onmouseover="guSx()" onmouseout="guSxBack()" onclick="showFoot()">
+        </div>
+        <div id="controller-gu_Dx" class="absolute hide" onmouseover="guDx()" onmouseout="guDxBack()" onclick="showFoot()">
+        </div>
+        <div id="controller-pd_Sx" class="absolute hide" onmouseover="pdSx()" onmouseout="pdSxBack()" onclick="showFoot()">
+        </div>
+        <div id="controller-pd_Dx" class="absolute hide" onmouseover="pdDx()" onmouseout="pdDxBack()" onclick="showFoot()">
+        </div>
+        <!-- head -->
+
+        <div id="container_head">
+            <div id="body_b" class="norepeat absolute position_b resize_b"></div>
+            <div id="back_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="back_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="inner" class="norepeat absolute position_b resize_b"></div>
+            <div id="nek_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="nek_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="chin_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="chin_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="mouth_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="mouth_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="mouth_front" class="norepeat absolute position_b  resize_b"></div>
+            <div id="ear_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="ear_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="mask_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="mask_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="eye_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="eye_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="eye_down_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="eye_down_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="forehead_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="forehead_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="forehead_front_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="forehead_front_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="gu_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="gu_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="head_top_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="head_top_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="horn_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="horn_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="diad_sx" class="norepeat absolute position_b resize_b"></div>
+            <div id="diad_dx" class="norepeat absolute position_b resize_b"></div>
+            <div id="diad_front" class="norepeat absolute position_b  resize_b"></div>
+        </div>
+        <!-- end head -->
+        <!-- nota -->
+        <div id="readMe">
+        </div>
+        <div id="readMeTop">
+        NOTA: go with the mouse over the right side of Gundam and click
+        </div>
+        <!-- video -->
+        <div id="video_player">
+            <div id="kader">
+                <video width="480px" height="360px" autobuffer="autobuffer" autoplay="autoplay" loop="loop" controls="controls" id="film">
+                <source src='' type='video/mp4;'>
+                </video>
+            </div>
+        </div>
+        <!-- end video -->
+    </div>
+    <div id="myMenuContainer">
+    <div id="menu">
+       <ul>
+        <li><a href="javascript: shell();">Shell</a></li>
+        <li><a href="javascript: showBody();">Body</a></li>
+        <li><a href="javascript: bones();">Bones</a></li>
+        <li><a href="javascript: showHead();">Head</a></li>
+        <li><a href="javascript: three();">3D</a></li>
+        </ul>
+    </div>
+    </div>
+    <!-- logo dx -->
+    <div id="logo">
+        <img src="svg/logo_dx.svg" alt="gundam mobile suit" class="shadow">
+    </div>
+    <div id="worker" class="absolute">
+        <img src="svg/worker.svg" alt="size">
+    </div>
+
+</body>
+
+</html>
