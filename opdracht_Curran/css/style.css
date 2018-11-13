@@ -1,0 +1,413 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0,202,2547);
+    
+}
+head{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200px;
+}
+#container{
+    width: 920px;
+    background-color: rgb(247,248,243);
+    border-bottom-left-radius: 417px;
+    border-bottom-right-radius: 417px;
+    margin-bottom: 230px;
+    box-shadow: -24px 24px 0px rgb(0,155,200),
+                -24px 0px 0px rgb(0,155,200);
+}
+/* FONT */
+@font-face {
+    font-family: Roundy_Rainbows;
+    src: url("../font/Roundy_Rainbows.otf") format("opentype");
+}
+
+/* logo */
+.logo{
+    font-family: Roundy_Rainbows;
+    color: rgb(255,97,78);
+    font-size: 152px;
+    text-align: center;
+    line-height: 140px;
+    letter-spacing: 9px;
+    width: 100%;
+}
+
+#line{
+    position: relative;
+    margin-top: -78px;
+    width: 300px;
+    font-family: Roundy_Rainbows;
+    font-size: 152px;
+    text-align: center;
+    color: rgb(255,97,78);
+    transform: scaleX(1.8);
+}
+.artist,
+#artist{
+    margin-top: 200px;
+    font-family: muli;
+    text-align: center;
+    font-size: 35px;
+    font-weight:100;
+}
+.ornamental,
+#ornamental{
+    text-align: center;
+    font-size: 22px;
+}
+/*text*/
+#section-text{
+  font-family: muli;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+article{
+    width: 60%;
+    padding-left: 80px;
+    padding-top: 116px;
+    font-size: 20px;
+}
+aside{
+    width: 40%;
+}
+#p-bold-text{
+    width: 350px;
+    font-weight: bolder;
+    font-size: 22px;
+    margin-bottom: 50px;
+    line-height: 33px;
+    
+}
+#j-letter{
+    font-size: 541%;
+    color: rgb(9,205,128);
+    font-family: Roundy_Rainbows;
+    vertical-align: bottom;
+    position: relative;
+    top: 116px;
+    left: -5px;
+}
+
+#p-paragraph-1,
+#p-paragraph-2{
+   margin-bottom: 50px;
+    line-height: 33px;
+}
+#p-paragraph-1 a{
+   color: rgb(0,129,169);
+   font-weight: bolder;
+}
+/* PICT */
+.imgs{
+    width: 303px;
+    height: 303px;
+}
+#img-1{
+   background-image: url('../img/gifathon/TokyoGifathon01.gif');
+    background-size: cover;
+    border-radius: 50%;
+}
+/* GALLERY */
+#gallery{
+  font-family: muli;
+  display: block;
+  width: 100%;
+}
+#examples{
+    
+}
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+}
+#gallery-container-1{
+    margin-top: 65px;
+}
+#gallery-container-2{
+    margin-top: 110px;
+}
+.gallery-items{
+    /*width: 33.33%;*/
+    width: 25%;
+    background-size:cover;
+    border-radius: 50%;
+}
+#gallery-pict-1{
+    height: 230px;
+    height: 230px;
+    background-image: url('../img/gifathon/TokyoGifathon02.gif');
+}
+#gallery-pict-2{
+    height: 230px;
+    height: 230px;
+    background-image: url('../img/gifathon/TokyoGifathon06.gif');
+}
+#gallery-pict-3{
+    height: 230px;
+    height: 230px;
+    background-image: url('../img/gifathon/TokyoGifathon18.gif');
+}
+/**/
+#gallery-pict-4{
+    height: 230px;
+    height: 230px;
+    background-image: url('../img/gifathon/TokyoGifathon24.gif');
+}
+#gallery-pict-5{
+    height: 230px;
+    height: 230px;
+    background-image: url('../img/gifathon/TokyoGifathon30.gif');
+}
+#gallery-pict-6{
+    height: 230px;
+    height: 230px;
+    background-image: url('../img/gifathon/TokyoGifathon01.gif');
+}
+/* FOOTER */
+footer{
+    padding-bottom: 374px;
+}
+#social-icons-container{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 230px;
+}
+/* icons */
+.icons{
+    width: 15%;
+    background-size:cover;
+    border-radius: 50%;
+    animation: icon-hover-grow 1s infinite ease-in-out;
+    animation-play-state: paused;
+    /*
+    box-shadow: -24px 24px 0px rgb(212,215,214);*/
+}
+#icon-1{
+    height: 130px;
+    height: 130px;
+    background-image: url('../img/socials/fb.png');
+}
+#icon-2{
+    height: 130px;
+    height: 130px;
+    background-image: url('../img/socials/dr.png');
+    
+}
+#icon-3{
+    height: 130px;
+    height: 130px;
+    background-image: url('../img/socials/tw.png');
+}
+#icon-4{
+    height: 130px;
+    height: 130px;
+    background-image: url('../img/socials/be.png');
+}
+/* ANIMATION ICONS */
+.icons:hover{ 
+    animation-play-state: running;
+}
+@keyframes icon-hover-grow {
+    0% {
+        transform: rotate(0deg) scale(1);
+        box-shadow: 0px 0px 0px rgb(212,215,214);
+    }
+    10% {
+        transform: rotate(-12deg)scale(1.1);
+        box-shadow: -8px 8px 0px rgb(212,215,214);
+    }
+    20% {
+        transform: rotate(12deg)scale(1.2);
+        box-shadow: -16px 16px 0px rgb(212,215,214);
+    }
+    25%{
+        transform: scale(1.3);
+        box-shadow: -24px 24px 0px rgb(212,215,214);
+    }
+    30% {
+        transform: rotate(-12deg)scale(1.2);
+        box-shadow: -12px 12px 0px rgb(212,215,214);
+    }
+    40% {
+        transform: rotate(12deg)scale(1);
+        box-shadow: 0px 0px 0px rgb(212,215,214);
+    }
+    50% {
+        transform: rotate(0deg);
+        box-shadow: 0px 0px 0px rgb(212,215,214);
+    }
+}
+/* ANIMATION GALLERY's ITEMS */
+
+#gallery-pict-1::after{
+    content: 'Sushi';
+    display: block;
+    background-color: rgb(9,205,128);
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 130px;
+    /*
+    line height center:
+    same value of height
+    */
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    /* 
+    130px/2 
+    top: calc(50% - 65px);
+    left: calc(50% - 65px);
+    */
+    top: calc(0% - 65px);
+        left: calc(50% - 65px);
+    
+    animation: gallery-element-hover 0.5s 1 linear forwards;
+    animation-play-state: paused;
+    transition-timing-function: cubic-bezier(0.000, 0.000, 0.000, 1.650);
+}
+#gallery-pict-2::after{
+    content: 'Ramen';
+    display: block;
+    background-color: rgb(9,205,128);
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: calc(0% - 65px);
+        left: calc(50% - 65px);
+    animation: gallery-element-hover 0.5s 1 linear forwards;
+    animation-play-state: paused; 
+}
+#gallery-pict-3::after{
+    content: 'Revenge';
+    display: block;
+    background-color: rgb(9,205,128);
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: calc(0% - 65px);
+        left: calc(50% - 65px);
+    animation: gallery-element-hover 0.5s 1 linear forwards;
+    animation-play-state: paused; 
+}
+#gallery-pict-4::after{
+    content: 'Totoro';
+    display: block;
+    background-color: rgb(9,205,128);
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: calc(0% - 65px);
+        left: calc(50% - 65px);
+    animation: gallery-element-hover 0.5s 1 linear forwards;
+    animation-play-state: paused;
+}
+#gallery-pict-5::after{
+    content: 'Gundam';
+    display: block;
+    background-color: rgb(9,205,128);
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: calc(0% - 65px);
+        left: calc(50% - 65px);
+    animation: gallery-element-hover 0.5s 1 linear forwards;
+    animation-play-state: paused;
+}
+#gallery-pict-6::after{
+    content: 'Godzilla';
+    display: block;
+    background-color: rgb(9,205,128);
+    width: 130px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    top: calc(0% - 65px);
+        left: calc(50% - 65px);
+    animation: gallery-element-hover 0.5s 1 linear forwards;
+    animation-play-state: paused;
+}
+#gallery-pict-1:hover::after,
+#gallery-pict-2:hover::after,
+#gallery-pict-3:hover::after,
+#gallery-pict-4:hover::after,
+#gallery-pict-5:hover::after,
+#gallery-pict-6:hover::after{
+    animation-fill-mode:none;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+#gallery-pict-1:not(:hover)::after,
+#gallery-pict-2:not(:hover)::after,
+#gallery-pict-3:not(:hover)::after,
+#gallery-pict-4:not(:hover)::after,
+#gallery-pict-5:not(:hover)::after,
+#gallery-pict-6:not(:hover)::after{
+    animation: gallery-element-hover-rewind 0.5s 1 linear forwards;
+}
+/* animation hovers (gallery) */
+@keyframes gallery-element-hover{
+    0%{
+        top: calc(50% - 65px);
+        left: calc(50% - 65px);
+        transform: scale(0)
+                   rotate(-180deg);
+        
+    }
+    100%{
+        top: calc(0% - 65px);
+        left: calc(50% - 65px);
+        transform: scale(1)
+                   rotate(0deg);
+        
+    }
+}
+@keyframes gallery-element-hover-rewind{
+    0%{
+        top: calc(50% - 65px);
+        left: calc(50% - 65px);
+        transform: scale(0)
+                   rotate(-180deg);
+        
+    }
+    100%{
+        top: calc(50% - 65px);
+        left: calc(50% - 65px);
+        transform: scale(0)
+                   rotate(-180deg);
+        
+    }
+}
