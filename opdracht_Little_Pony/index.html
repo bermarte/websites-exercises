@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>oefening 9 - hamburger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--
+    a)	burger icon erin plaatsen
+    b)	bolletjes verwijderen
+    c)	typografie, zoek de juiste fonts
+    d)	menubutton fixed in rechterbovenhoek plaatsen.
+    e)	knoppen horizontaal maken in de grote   variant
+    f)  Knoppen aankleden met kleur en vorm
+    g)	hovers voor de grote versie
+    h)	In plaats ven de ul ineens verbergen, items één voor één laten inklappen, transitions toevoegen, of menu-items op een andere creatieve geanimeerde manier laten verdwijnen en verschijnen.
+    i)	hint maken in kleine versie (wijzend handje met tekst "Menu") en na 3 seconde laten verdwijnen.
+    j)	Een burger icon maken met enkel before en after.
+    
+    
+    
+    a) place burger icon in it
+    b) remove balls
+    c) typography, find the right fonts
+    d) place menubutton fixed in the upper right corner.
+    e) make buttons horizontal in the large variant
+    f)
+
+    Dress up buttons with color and shape
+    g) hovers for the big version
+    h) Instead of hiding the ul at once, collapsing items one by one, adding transitions, or having menu items disappear and appear in a different creative animated way.
+    i) hint in small version (pointing hand with text "Menu") and after 3 seconds disappear.
+    j) Create a citizen icon with just before and after.
+    -->
+    <div id="container">
+        <header class="centerText">
+            <div id="movelogo"></div>
+        </header>
+        <main class="centerText">
+            
+            <nav>
+               
+                <div id="menuKnop">
+
+                    <!-- icon -->
+                    
+                    <!-- <div id="menuicon">menu</div>-->
+                    <div id="menuicon">
+                        <img src="img/burgerIcon.png" alt="menu" style="width:50px" id="myImg">
+                    </div>
+
+
+
+                    <ul class="verborgen">
+                        <li>
+                            <a href="#" id="link1" class="icons aniHover"><!--link1--></a>
+
+                        </li>
+                        <li>
+                            <a href="#" id="link2" class="icons aniHover"><!--link2--></a>
+
+                        </li>
+                        <li>
+                            <a href="#" id="link3" class="icons aniHover"><!--link3--></a>
+
+                        </li>
+                        <li>
+                            <a href="#" id="link4" class="icons aniHover"><!--link4--></a>
+
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+        </main>
+        <footer class="centerText">
+           <div id="myMsgFooter">Get them ALL!</div>
+        </footer>
+    </div>
+</body>
+<script>
+    var menuKnop = document.querySelector("#menuicon");
+    var menuLijst = document.querySelector("nav ul ");
+    menuKnop.addEventListener("click", toggleMenu);
+    function toggleMenu(evt) {
+
+        menuLijst.classList.toggle("verborgen");
+    }
+    
+</script>
+
+</html>

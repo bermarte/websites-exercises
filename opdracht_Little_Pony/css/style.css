@@ -1,0 +1,361 @@
+* {
+    /**  RESET **/
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: #9d9c9c;
+}
+
+@font-face {
+    font-family: 'KBFunHouse';
+    src: url('KBFunHouse.woff2') format('woff2'),
+    url('KBFunHouse.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+#container {
+    margin: auto;
+    background-color: #7c7979;
+    width: 90%;
+    height: 100vh;
+    max-width: 1600px;
+}
+
+#menuKnop {
+    position: absolute;
+    top: -6vh;
+    left: 5vw;
+
+}
+
+@media(min-width:1038px) {
+    /*1038px*/
+    #menuKnop {
+        left: 25vw;
+    }
+}
+
+header {
+    background-color: #c4c1c1;
+    background-image: url(../img/back_header.jpg);
+    opacity: 1;
+    height: 20vh;
+    background-size: cover;
+}
+
+#movelogo {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../img/logo.png);
+    position: absolute;
+    left: 45vw;
+    top: 5vh;
+    animation: moveLogo 1s infinite ease-in-out;
+}
+
+@keyframes moveLogo {
+    0% {
+        top: 5vh;
+    }
+    50% {
+        top: 5.3vh;
+    }
+    100% {
+        top: 5vh;
+    }
+}
+
+main {
+    background-color: #9d9c9c;
+    height: 60vh;
+    background-image: url("../img/my-little-pony-clipart-friend-12.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer {
+
+    background-color: #9d9c9c;
+    /*background-image: url("../img/images.jpeg");*/
+    background-image: url("../img/custom.png");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 90vw;
+    opacity: 1;
+
+}
+
+.centerText {
+    text-align: center;
+}
+
+.verborgen {
+    display: none;
+}
+
+#myMsgFooter {
+    display: none;
+}
+
+#menuicon {
+    text-align: left;
+    cursor: pointer;
+    margin-top: 90px;
+    margin-left: 45px;
+    height: 46px;
+}
+
+#menuicon:hover {
+    border: 8px solid #f7a9b7;
+    transition: all 200ms ease-out;
+    border-radius: 22px;
+    background-color: #f7a9b7;
+    box-shadow: 2px 2px 12px 0px rgba(05, 25, 25, 0.5);
+    /*margin-top:-16px;*/
+}
+
+/******/
+
+nav ul {
+    text-align: center;
+    /*background-color: #83cee5;*/
+    margin: 20px;
+    margin-top: 12vh;
+
+
+}
+
+nav li {
+    display: block;
+}
+
+nav li #link1,
+nav li #link2,
+nav li #link3,
+nav li #link4 {
+
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+@media(max-height:400px) {
+    /*1038px*/
+    body {
+        /*background-color: red;*/
+        
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+    #menuicon {
+        width: 50px;
+    }
+
+}
+
+.icons {
+    width: 10vh;
+    height: 10vh;
+    min-width: 35px;
+    min-height: 35px;
+    background-size: contain;
+    border-radius: 12px;
+    box-shadow: 2px 2px 12px 0px rgba(05, 25, 25, 0.5);
+
+}
+
+#link1 {
+    background-image: url(../img/mpb_icon.png);
+}
+
+#link2 {
+    background-image: url(../img/mobile.png);
+}
+
+#link3 {
+    background-image: url(../img/radio.png);
+}
+
+#link4 {
+    background-image: url(../img/Girls_icon.png);
+}
+
+.aniHover {
+    transition: all 200ms ease-out;
+
+}
+
+/**/
+
+#link1:hover {
+    border: 8px solid #73AD21;
+    /*margin-top:-16px;*/
+}
+
+#link2:hover {
+    border: 8px solid #f508ec;
+
+}
+
+#link3:hover {
+    border: 8px solid #69e8f8;
+
+}
+
+#link4:hover {
+    border: 8px solid #f0ad40;
+
+}
+
+/**/
+
+@media(min-width:600px) {
+
+
+    #myImg {
+        display: none;
+    }
+    body {
+        background-color: #b5b5b3;
+    }
+    .verborgen {
+        display: block;
+    }
+
+
+    nav ul {
+        text-align: center;
+        /*background-color: #83cee5;*/
+        margin: 20px;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 32px;
+    }
+
+    nav li a {
+        /*background-color: #a8e57c;*/
+        display: block;
+        padding: 16px;
+        /* margin: 6px;*/
+        line-height: 1.4;
+        font-size: 16px;
+    }
+
+    a {
+        /*background-color: #4a6935;*/
+        text-decoration: none;
+    }
+
+    #link1:hover {
+        border: 8px solid #73AD21;
+        /*margin-top:-16px;*/
+    }
+
+    #link2:hover {
+        border: 8px solid #f508ec;
+
+    }
+
+    #link3:hover {
+        border: 8px solid #69e8f8;
+
+    }
+
+    #link4:hover {
+        border: 8px solid #f0ad40;
+
+    }
+
+    .aniHover {
+        transition: all 200ms ease-out;
+
+    }
+
+    /**/
+    .icons {
+        width: 60px;
+        height: 60px;
+        background-size: contain;
+        border-radius: 12px;
+        box-shadow: 2px 2px 12px 0px rgba(05, 25, 25, 0.5);
+    }
+
+    #link1 {
+        background-image: url(../img/mpb_icon.png);
+    }
+
+    #link2 {
+        background-image: url(../img/mobile.png);
+    }
+
+    #link3 {
+        background-image: url(../img/radio.png);
+    }
+
+    #link4 {
+        background-image: url(../img/Girls_icon.png);
+    }
+    #menuicon {
+
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 0px;
+    }
+    header {
+
+        opacity: 0.4;
+
+    }
+    #movelogo {
+        display: none;
+    }
+    main {
+
+        background-color: #9d9c9c;
+        height: 70vh;
+        background-image: url("../img/my-little-pony-clipart-friend-12.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    footer {
+
+        background: radial-gradient(#1d82d0, #07628e);
+        height: 10vh;
+        width: 90vw;
+        max-width: 1600px;
+
+        opacity: 0.7;
+
+    }
+
+    #myMsgFooter {
+        font-family: 'KBFunHouse';
+        font-weight: 500;
+        font-style: normal;
+        font-size: 26px;
+        color: yellow;
+        padding-top: 2vh;
+        letter-spacing: 7px;
+        text-shadow: -2px 2px 8px rgba(3, 3, 152, 0.8),
+        2px 2px 0px rgba(3, 3, 152, 1);
+        display: block;
+
+    }
+
+}
