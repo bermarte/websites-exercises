@@ -8,7 +8,7 @@ body{
     width: 1028px;
     height: 573px;
     margin: 25px;
-    border-radius: 2%;
+    border-radius: 22px;
     position: fixed;
 }
 .resize{
@@ -552,13 +552,6 @@ transition: all 1s;
 #container_head {
     margin 0 auto;
     border-radius: 2%;
-    /* background-color: aliceblue;
-    min-width: 809px;
-    min-height: 535px;
-   
-    min-width: 809px;
-    min-height: 480px;
-     */
     width: 500px;
     height: 550px;
     margin: 25px;
@@ -567,8 +560,6 @@ transition: all 1s;
     top: -21px;
     left: 263px;
 }
-
-
 
 .position_b {
     top: -145px;
@@ -876,10 +867,6 @@ transition: all 1s;
 }
 
 /* animations */
-/* 
-   top: -145px;
-   left: -17px;
-*/
 
 @keyframes move_diad_dx {
     0% {
@@ -1631,9 +1618,12 @@ ul {
 }
 li {
     float: left;
-    border-right:solid 1px #fff;/*add */
+    border-right:solid 1px #fff;
     padding-left: 5px;
     padding-right: 5px;
+}
+li:last-child{
+   border-right: none; 
 }
 /* video */
 #kader{
@@ -1647,7 +1637,7 @@ li {
     width: 600px;
     padding: 20px;
     padding-top: 87px;
-    margin-left: 394px;/*387px;*/
+    margin-left: 394px;
 }
 
 /* links */
@@ -1684,4 +1674,22 @@ a:hover {
    position: absolute;
    top: 34px;
    right: 196px;
+   animation-name: removeReadme;
+   animation-duration: 6s;
+   animation-iteration-count: 1;
+   opacity: 0;
+}
+@keyframes removeReadme{
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

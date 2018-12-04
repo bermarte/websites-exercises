@@ -554,7 +554,7 @@ function myMain() {
         function showPelvis() {
             ShowVideoLayer();
             txtPelvis();
-            myDiv.innerHTML = 'pelvis selected';
+            document.getElementById('film').src = 'vid/PELVIS.mp4';
         }
 
         function showChest() {
